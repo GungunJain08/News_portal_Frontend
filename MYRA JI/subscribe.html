@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            position: relative;
+        }
+
+        .header {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+            margin-left: auto;
+        }
+
+        .header nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header nav ul li a:hover, .header nav ul li a.active {
+            background-color: #004080;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .subscribe-plans {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .subscribe-plans h2 {
+            font-size: 2.5em;
+            color: #0066cc;
+            margin-bottom: 30px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .plan-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .plan-card h3 {
+            font-size: 1.75em;
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+
+        .plan-card .price {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .plan-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .plan-card ul li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .plan-card .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            color: #fff;
+            background-color: #0066cc;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .plan-card .btn:hover {
+            background-color: #004080;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1>The Global Times</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="subscribe.html"class="active">Subscribe </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">SignUp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="subscribe-plans">
+            <h2>Subscribe to Our Plans</h2>
+            <div class="plans">
+                <div class="plan-card">
+                    <h3>Basic Plan</h3>
+                    <div class="price">₹50/month</div>
+                    <ul>
+                        <li>Access to basic articles</li>
+                        <li>Email newsletters</li>
+                        <li>No personalization</li>
+                    </ul>
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
+                <div class="plan-card">
+                    <h3>Premium Plan</h3>
+                    <div class="price">₹100/month</div>
+                    <ul>
+                        <li>All features of Basic Plan</li>
+                        <li>Exclusive premium content</li>
+                        <li>Ad-free experience</li>
+                    </ul>
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
+                <div class="plan-card">
+                    <h3>Pro Plan</h3>
+                    <div class="price">₹150/month</div>
+                    <ul>
+                        <li>All features of Premium Plan</li>
+                        <li>1-on-1 expert sessions</li>
+                        <li>Early access to new features</li>
+                    </ul>
+                    <a href="./subscribe.html" class="btn">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; TheGlobalTimes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
